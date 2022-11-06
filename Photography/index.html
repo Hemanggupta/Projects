@@ -17,6 +17,7 @@
     />
     <link rel="icon" href="/-img/camera-solid.svg" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="/script.js"></script>
     <title>Elegent | Photography</title>
   </head>
 
@@ -24,16 +25,15 @@
     <header class="main-head">
       <nav>
         <h1 id="logo">Elegent</h1>
-        <input type="checkbox" class="menu-check" id="" />
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
         </div>
       </nav>
     </header>
@@ -46,7 +46,7 @@
             excepturi animi velit laborum cumque corrupti provident doloremque
             iure quibusdam ipsam.
           </p>
-          <a href="#gallery">Gallery</a>
+          <a href="#work">Gallery</a>
         </div>
         <div class="hero-images">
           <img
@@ -103,6 +103,37 @@
         <img src="/-img/gallery3.jpg" alt="img3" class="gallery3" />
         <img src="/-img/gallery4.jpg" alt="img4" class="gallery4" />
       </div>
+      <section class="contact" id="contact">
+        <div class="form-wrapper flex">
+          <h2>Get in <br /><span>touch.</span></h2>
+          <form>
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="abcd@gmail.com"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <img src="./-img/contact.jpg" alt="img" />
+      </section>
     </main>
+    <footer>
+      <h4>Elegent Photography &copy; 2022</h4>
+      <ul>
+        <li>
+          <a href="#"><img src="/-img/youtube.png" alt="youtube" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/-img/instagram.png" alt="instagram" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/-img/twitter-sign.png" alt="twitter" /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
