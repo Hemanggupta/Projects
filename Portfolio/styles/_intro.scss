@@ -1,0 +1,85 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    h1 {
+      margin-left: 1rem;
+      text-align: center;
+    }
+    img {
+      width: 4rem;
+    }
+  }
+
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 37rem;
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+  h2 {
+    font-size: 6rem;
+    padding-top: 2rem;
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 4rem;
+    padding: 2rem 0;
+  }
+  p {
+    padding-top: 2rem;
+    font-weight: 500;
+    color: black;
+  }
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro-social {
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+    img {
+      height: 6rem;
+    }
+  }
+}
+
+.coding-img {
+  height: 45rem;
+}
+
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+}
+.intro-text,
+.intro-images {
+  flex: 1 1 30rem;
+}

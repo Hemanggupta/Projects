@@ -1,0 +1,18 @@
+footer {
+  background: $gray-text;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  @include flex(flex-start, center, row);
+  img {
+    filter: invert(1);
+    height: 4rem;
+  }
+  ul {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
+  }
+  h4 {
+    flex: 1 1 40rem;
+  }
+}
